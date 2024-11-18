@@ -5,8 +5,14 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const app = express();
-const PORT = 3000;
 const upload = multer();
+
+// Setup Network
+const PORT = 80;
+const IP = '192.168.0.101';
+
+
+// Ardion Things
 const { SerialPort } = require('serialport');
 const porta = new SerialPort({
     path: 'COM9',
@@ -31,4 +37,4 @@ app.post('/input', upload.none(), function (req, res, next) {
   })
 
 // MainLoop
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, IP, () => console.log(`Server is running on port ${PORT}`));
