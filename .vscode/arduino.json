@@ -1,0 +1,7 @@
+{
+    "sketch": "ardionxjs.ino",
+    "output": "./Build",
+    "board": "arduino:avr:uno",
+    "programmer": "avrisp",
+    "port": "COM9"
+}

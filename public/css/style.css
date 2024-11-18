@@ -1,0 +1,9 @@
+#mainbody {
+    width: 80%;
+}
+#mainbody .row {
+    margin-top: 2%;
+}
+#mainform button {
+    margin-top: 2%;
+}
